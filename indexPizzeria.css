@@ -31,19 +31,20 @@ body {
   padding: 1rem 2rem;
   font-size: 16px;
   color: white;
-  background-color: #ff5733;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  --primary-color: #ff5733;
 }
 
 .button:hover {
-  background-color: #a31404;
+  background-color: var(--primary-color);
 }
 
 body {
-  min-height: 100vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("hero.jpg");
   background-size: cover;
@@ -126,6 +127,7 @@ body {
   white-space: normal;
   word-break: keep-all;
   text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .nav-links li a:hover {
@@ -142,5 +144,5 @@ body {
 }
 
 .headerundnav {
-  width: 100vw;
+  height: 100vh;
 }
